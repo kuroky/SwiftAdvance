@@ -1,0 +1,278 @@
+[
+    {
+    "title": "内建集合类型",
+    "items": [
+              {
+              "title": "数组"
+              
+              },
+              {
+              "title": "字典"
+              
+              },
+              {
+              "title": "Set"
+              
+              },
+              {
+              "title": "Range"
+              
+              }
+              ]
+    },
+    {
+        "title": "集合类型协议",
+        "items": [
+                  {
+                  "title": "序列"
+                  },
+                  {
+                  "title": "集合类型"
+                  },
+                  {
+                  "title": "遵守 Collection 协议"
+                  },
+                  {
+                  "title": "索引"
+                  },
+                  {
+                  "title": "切片"
+                  },
+                  {
+                  "title": "专门的集合类型"
+                  }
+                  ]
+    },
+     {
+     "title": "可选值",
+     "items": [
+               {
+               "title": "哨岗值"
+               },
+               {
+               "title": "通过枚举解决魔法数的问题"
+               },
+               {
+               "title": "可选值预览"
+               },
+               {
+               "title": "强制解包的时机"
+               },
+               {
+               "title": "多灾多难的隐式解包可选值"
+               }
+               ]
+     },
+     {
+     "title": "结构体和类",
+     "items": [
+               {
+               "title": "值类型"
+               },
+               {
+               "title": "可变性"
+               },
+               {
+               "title": "结构体"
+               },
+               {
+               "title": "写时复制"
+               },
+               {
+               "title": "闭包和可变性"
+               },
+               {
+               "title": "内存"
+               },
+               {
+               "title": "闭包和内存"
+               }
+               ]
+     },
+     {
+     "title": "编码和解码",
+     "items": [
+               {
+               "title": "概览"
+               },
+               {
+               "title": "最小的例子"
+               },
+               {
+               "title": "编码过程"
+               },
+               {
+               "title": "生成的代码"
+               },
+               {
+               "title": "手动遵守协议"
+               },
+               {
+               "title": "常见的编码任务"
+               }
+               ]
+     },
+     {
+     "title": "函数",
+     "items": [
+               {
+               "title": "函数的灵活性"
+               },
+               {
+               "title": "局部函数和变量捕获"
+               },
+               {
+               "title": "函数作为代理"
+               },
+               {
+               "title": "inout 参数和可变方法"
+               },
+               {
+               "title": "计算属性"
+               },
+               {
+               "title": "下标"
+               },
+               {
+               "title": "键路径"
+               },
+               {
+               "title": "自动闭包"
+               }
+               ]
+     },
+     {
+     "title": "字符串",
+     "items": [
+               {
+               "title": "Unicode, 而非固定宽度"
+               },
+               {
+               "title": "字位簇和标准等价"
+               },
+               {
+               "title": "字符串和集合"
+               },
+               {
+               "title": "字符串索引"
+               },
+               {
+               "title": "编码单元视图"
+               },
+               {
+               "title": "字符串和 Foundation"
+               },
+               {
+               "title": "String 和 Character 的内部结构"
+               },
+               {
+               "title": "简单的正则表达式匹配器"
+               },
+               {
+               "title": "ExpressibleByStringLiteral"
+               },
+               {
+               "title": "CustomStringConvertible 和 CustomDebugStringConvertible"
+               },
+               {
+               "title": "文本输出流"
+               },
+               {
+               "title": "字符串性能"
+               }
+               ]
+     },
+     {
+     "title": "错误处理",
+     "items": [
+               {
+               "title": "Result 类型"
+               },
+               {
+               "title": "抛出和捕获"
+               },
+               {
+               "title": "带有类型的错误"
+               },
+               {
+               "title": "将错误桥接到 Objective-C"
+               },
+               {
+               "title": "错误和函数参数"
+               },
+               {
+               "title": "使用 defer 进行清理"
+               },
+               {
+               "title": "错误和可选值"
+               },
+               {
+               "title": "错误链"
+               },
+               {
+               "title": "高阶函数和错误"
+               }
+               ]
+     },
+     {
+     "title": "泛型",
+     "items": [
+               {
+               "title": "重载"
+               },
+               {
+               "title": "对集合采用泛型操作"
+               },
+               {
+               "title": "使用泛型进行代码设计"
+               },
+               {
+               "title": "泛型的工作方式"
+               }
+               ]
+     },
+     {
+     "title": "协议",
+     "items": [
+               {
+               "title": "面向协议编程"
+               },
+               {
+               "title": "协议的两种类型"
+               },
+               {
+               "title": "带有 Self 的协议"
+               },
+               {
+               "title": "协议内幕"
+               }
+               ]
+     },
+     {
+     "title": "互用性",
+     "items": [
+               {
+               "title": "实践: 封装 CommonMark"
+               },
+               {
+               "title": "低层级类型概览"
+               },
+               {
+               "title": "函数指针"
+               }
+               ]
+     }
+]
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
