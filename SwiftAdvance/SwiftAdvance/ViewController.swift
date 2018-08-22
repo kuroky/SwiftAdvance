@@ -81,7 +81,8 @@ extension ViewController: UITableViewDelegate {
         if indexPath.row != 0 {
             let sectionIndex = String(indexPath.section + 1) + "."
             let rowIndex = sectionIndex + String(indexPath.row)
-            let detailVC = DetailViewController()
+            let story = UIStoryboard(name: "Main", bundle: nil)
+            let detailVC = story.instantiateViewController(withIdentifier: "DetailViewControllerID") as! DetailViewController
             detailVC.jsonName = rowIndex
             self.navigationController?.pushViewController(detailVC, animated: true)
             return

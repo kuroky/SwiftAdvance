@@ -7,6 +7,9 @@
 //
 
 import Foundation
+import UIKit
+
+let width = UIScreen.main.bounds.size.width - 30
 
 /// list Model
 class ItemModel: Codable {
@@ -35,4 +38,14 @@ class SubItem: Codable {
 /// detail Model
 struct DetailItem: Codable {
     var title: String?
+    var desc: String?
+    var descHeight: Double?
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.title = try container.decode(String.self, forKey: .title)
+        self.desc = try container.decode(String.self, forKey: .desc)
+        self.descHeight = self.desc?.height(width: width)
+    }
 }
+

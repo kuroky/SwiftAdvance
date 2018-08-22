@@ -1,36 +1,14 @@
 //
-//  DetailViewController.swift
+//  1.2.swift
 //  SwiftAdvance
 //
 //  Created by kuroky on 2018/8/22.
 //  Copyright © 2018年 Kuroky. All rights reserved.
 //
 
-import UIKit
-import Down
+import Foundation
 
-class DetailViewController: UIViewController {
-
-    var jsonName: String!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setupUI()
-    }
-    
-    func setupUI() {
-        //self.view.backgroundColor = UIColor.white
-        guard let downView = try? DownView(frame: self.view.bounds, markdownString: markdown) else {
-            return
-        }
-        view.addSubview(downView)
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
-    let markdown = """
+ let markdownString = """
     ## Down
     [![Build Status](https://travis-ci.org/iwasrobbed/Down.svg?branch=master)](https://travis-ci.org/iwasrobbed/Down)
     [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/iwasrobbed/Down/blob/master/LICENSE)
@@ -40,44 +18,43 @@ class DetailViewController: UIViewController {
     [![iOS](https://img.shields.io/badge/OS-iOS-orange.svg)](https://developer.apple.com/ios/)
     [![tvOS](https://img.shields.io/badge/OS-tvOS-orange.svg)](https://developer.apple.com/tvos/)
     [![Coverage Status](https://coveralls.io/repos/github/iwasrobbed/Down/badge.svg?branch=master)](https://coveralls.io/github/iwasrobbed/Down?branch=master)
-    
+
     Blazing fast Markdown rendering in Swift, built upon [cmark](https://github.com/jgm/cmark).
-    
+
     Is your app using it? [Let us know!](mailto:rob@robphillips.me)
-    
+
     #### Maintainers
-    
+
     - [Rob Phillips](https://github.com/iwasrobbed)
     - [Keaton Burleson](https://github.com/128keaton)
     - [Other contributors](https://github.com/iwasrobbed/Down/graphs/contributors) 🙌
-    
+
     ### Installation
-    
+
     Note: Swift 4 support is now on the `master` branch and any tag >= 0.4.x (Swift 3 is 0.3.x)
-    
+
     Quickly install using [CocoaPods](https://cocoapods.org):
-    
+
     ```ruby
     pod 'Down'
     ```
-    
+
     Or [Carthage](https://github.com/Carthage/Carthage):
-    
+
     ```
     github "iwasrobbed/Down"
     ```
     Due to limitations in Carthage regarding platform specification, you need to define the platform with Carthage.
-    
+
     e.g.
-    
+
     ```carthage update --platform iOS```
-    
+
     Or manually install:
-    
+
     1. Clone this repository
     2. Build the Down project
     3. Add the resulting framework file to your project
     4. ?
     5. Profit
-    """
-}
+"""
