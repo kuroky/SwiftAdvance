@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// list Model
 class ItemModel: Codable {
     var title: String?
     var items: [SubItem]?
@@ -28,5 +29,10 @@ class ItemModel: Codable {
 }
 
 class SubItem: Codable {
+    var title: String?
+}
+
+/// detail Model
+struct DetailItem: Codable {
     var title: String?
 }

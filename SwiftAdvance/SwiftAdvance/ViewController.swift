@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Swift Advance"
         setupData()
         setupTableView()
     }
@@ -34,9 +35,7 @@ class ViewController: UIViewController {
         let decode = JSONDecoder()
         let items = try? decode.decode([ItemModel].self, from: data!)
         
-        if items != nil {
-            dataList = items
-        }
+        dataList = items ?? [ItemModel]()
     }
     
     override func didReceiveMemoryWarning() {
@@ -58,15 +57,17 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         let item = dataList[indexPath.section]
+        let sectionIndex = String(indexPath.section + 1) + "."
         if indexPath.row == 0 {
             cell.accessoryType = .disclosureIndicator
-            cell.textLabel?.text = String(indexPath.section + 1) + ". " + item.title!
+            cell.textLabel?.text = sectionIndex + " " + item.title!
         }
         
         if item.items != nil && indexPath.row != 0 {
+            let rowIndex = "    " + sectionIndex + String(indexPath.row) + " "
             cell.accessoryType = .none
             let subItem = item.items![indexPath.row - 1]
-            cell.textLabel?.text = subItem.title
+            cell.textLabel?.text = rowIndex + subItem.title!
         }
         
         return cell
@@ -78,6 +79,11 @@ extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         if indexPath.row != 0 {
+            let sectionIndex = String(indexPath.section + 1) + "."
+            let rowIndex = sectionIndex + String(indexPath.row)
+            let detailVC = DetailViewController()
+            detailVC.jsonName = rowIndex
+            self.navigationController?.pushViewController(detailVC, animated: true)
             return
         }
         

@@ -14,6 +14,8 @@
 		5B04A03B212558F1008DFC7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B04A039212558F1008DFC7B /* LaunchScreen.storyboard */; };
 		5B04A04321266DDB008DFC7B /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B04A04221266DDB008DFC7B /* ItemModel.swift */; };
 		5B04A04721269AFC008DFC7B /* Json.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B04A04621269AFC008DFC7B /* Json.json */; };
+		5B5C3F23212D05FA00119A62 /* 1.1.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B5C3F22212D05FA00119A62 /* 1.1.json */; };
+		5B5C3F25212D06BC00119A62 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5C3F24212D06BC00119A62 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		5B04A03C212558F1008DFC7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B04A04221266DDB008DFC7B /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		5B04A04621269AFC008DFC7B /* Json.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Json.json; sourceTree = "<group>"; };
+		5B5C3F22212D05FA00119A62 /* 1.1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 1.1.json; sourceTree = "<group>"; };
+		5B5C3F24212D06BC00119A62 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +62,34 @@
 		5B04A02F212558EE008DFC7B /* SwiftAdvance */ = {
 			isa = PBXGroup;
 			children = (
+				5B5C3F20212D05D000119A62 /* Resource */,
 				5B04A04621269AFC008DFC7B /* Json.json */,
 				5B04A04221266DDB008DFC7B /* ItemModel.swift */,
 				5B04A030212558EE008DFC7B /* AppDelegate.swift */,
 				5B04A032212558EE008DFC7B /* ViewController.swift */,
+				5B5C3F24212D06BC00119A62 /* DetailViewController.swift */,
 				5B04A034212558EE008DFC7B /* Main.storyboard */,
 				5B04A037212558F1008DFC7B /* Assets.xcassets */,
 				5B04A039212558F1008DFC7B /* LaunchScreen.storyboard */,
 				5B04A03C212558F1008DFC7B /* Info.plist */,
 			);
 			path = SwiftAdvance;
+			sourceTree = "<group>";
+		};
+		5B5C3F20212D05D000119A62 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				5B5C3F21212D05E700119A62 /* 1 */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		5B5C3F21212D05E700119A62 /* 1 */ = {
+			isa = PBXGroup;
+			children = (
+				5B5C3F22212D05FA00119A62 /* 1.1.json */,
+			);
+			path = 1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +154,7 @@
 				5B04A038212558F1008DFC7B /* Assets.xcassets in Resources */,
 				5B04A036212558EE008DFC7B /* Main.storyboard in Resources */,
 				5B04A04721269AFC008DFC7B /* Json.json in Resources */,
+				5B5C3F23212D05FA00119A62 /* 1.1.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +168,7 @@
 				5B04A04321266DDB008DFC7B /* ItemModel.swift in Sources */,
 				5B04A033212558EE008DFC7B /* ViewController.swift in Sources */,
 				5B04A031212558EE008DFC7B /* AppDelegate.swift in Sources */,
+				5B5C3F25212D06BC00119A62 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
