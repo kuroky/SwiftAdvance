@@ -52,9 +52,22 @@
                     <view key="view" contentMode="scaleToFill" id="Phl-WS-P5u">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="mnp-8n-o60">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <color key="color" red="0.38431372549999998" green="0.3921568627" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mnp-8n-o60" firstAttribute="centerY" secondItem="Phl-WS-P5u" secondAttribute="centerY" id="GNZ-iR-pWS"/>
+                            <constraint firstItem="mnp-8n-o60" firstAttribute="centerX" secondItem="Phl-WS-P5u" secondAttribute="centerX" id="nsv-gh-yTh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="oJq-r9-iJi"/>
                     </view>
+                    <connections>
+                        <outlet property="hudView" destination="mnp-8n-o60" id="gTU-Pd-x0A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OmY-Mt-G9y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
