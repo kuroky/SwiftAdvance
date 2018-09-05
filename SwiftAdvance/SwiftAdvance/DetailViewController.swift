@@ -28,7 +28,10 @@ class DetailViewController: UIViewController {
         startHud()
         guard let contentView = try? DownView(frame: self.view.bounds, markdownString: json, didLoadSuccessfully: { [weak self] in
             self?.stopHud()
-        }) else { return }
+        }) else {
+            stopHud()
+            return
+        }
         view.addSubview(contentView)
         view.bringSubview(toFront: hudView)
     }
